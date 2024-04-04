@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Liyuan Geng (耿立源) / Personal Website"
+title                    : "Homepage"
 title_separator          : "-"
-name                     : &name "Liyuan Geng"
+name                     : &name "Liyuan Geng (耿立源)"
 description              : &description "personal description"
 url                      : https://lygeng0427.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
