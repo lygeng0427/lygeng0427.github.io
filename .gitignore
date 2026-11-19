@@ -7,3 +7,8 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Original materials used to prepare the public profile
+/Academic_CV_for_Webpage.zip
+/images/IMG_9571.JPG
+/images/IMG_5995.HEIC

@@ -1,0 +1,76 @@
+---
+layout: profile
+redirect_from:
+  - /about/
+  - /about.html
+  - /publications/
+---
+<div class="site-frame" id="top">
+  <div class="profile-grid">
+    <header class="profile">
+      <div class="profile-identity">
+        <h1>Liyuan Geng</h1>
+        <p class="affiliation">M.S. in Robotics <span>Carnegie Mellon University</span></p>
+      </div>
+      <div class="profile-contact">
+        <a class="email" href="mailto:liyuange@andrew.cmu.edu">
+          <span class="email-address">liyuange [at] andrew [dot] cmu [dot] edu</span>
+          <span class="email-label">Email</span>
+        </a>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://github.com/lygeng0427">GitHub</a>
+          <a href="https://x.com/{{ site.twitter_username }}">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/liyuan-geng-120a65238/">LinkedIn</a>
+        </nav>
+      </div>
+      <img class="profile-photo" src="{{ '/images/liyuan-geng.webp' | relative_url }}" width="816" height="612" alt="Liyuan Geng seated at a rocky overlook with an arch bridge behind him" fetchpriority="high">
+    </header>
+
+    <main id="main">
+      <div class="bio">
+        <p>I’m a master’s student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at Carnegie Mellon University, where I work with <a href="https://davheld.github.io/">David Held</a> in the <a href="https://r-pad.github.io/">Robots Perceiving and Doing Lab</a>.</p>
+        <p>I work on robot manipulation, developing policies that adapt by learning from their own history of actions and outcomes.</p>
+        <p>Before CMU, I studied computer science at <a href="https://shanghai.nyu.edu/">NYU Shanghai</a> and worked on visual imitation learning for robot manipulation with <a href="https://www.lerrelpinto.com/">Lerrel Pinto</a> at NYU.</p>
+      </div>
+
+      <section class="research" id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+
+        <article class="publication publication--featured">
+          <div>
+            <p class="venue">CoRL 2026</p>
+            <h3><a href="https://liy1shu.github.io/SCOUT/">Scouting the Dynamics Gap: Test-Time Policy Adaptation via Action-Outcome Feedback</a></h3>
+            <p class="authors"><strong>Liyuan Geng*</strong>, Yishu Li*, Xinyi Mao*, Amber Li, David Held</p>
+            <p class="summary">SCOUT adapts a robot’s manipulation policy to unfamiliar dynamics using the gap between predicted and observed action outcomes.</p>
+            <p class="paper-links">
+              <a href="https://liy1shu.github.io/SCOUT/">Project page</a>
+              <a href="https://arxiv.org/abs/2609.36107">arXiv</a>
+            </p>
+          </div>
+          <img class="publication-image" src="{{ '/images/scout.webp' | relative_url }}" width="400" height="250" alt="Robot arm manipulating an uneven bar in SCOUT’s real-world experiments">
+        </article>
+
+        <article class="publication">
+          <div>
+            <p class="venue">EMNLP 2025 · Oral</p>
+            <h3><a href="https://aclanthology.org/2025.emnlp-main.213/">Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective</a></h3>
+            <p class="authors">Siyue Zhang, Yilun Zhao, <strong>Liyuan Geng</strong>, Arman Cohan, Anh Tuan Luu, Chen Zhao</p>
+            <p class="summary">This work compares diffusion and autoregressive language models for text embeddings, with a focus on long and complex documents.</p>
+            <p class="paper-links">
+              <a href="https://aclanthology.org/2025.emnlp-main.213/">ACL Anthology</a>
+              <a href="https://arxiv.org/abs/2505.15045">arXiv</a>
+            </p>
+          </div>
+          <img class="publication-image publication-image--diagram" src="{{ '/images/text-embeddings.webp' | relative_url }}" width="400" height="250" alt="Diagram comparing attention in autoregressive and diffusion language models" loading="lazy">
+        </article>
+
+        <p class="publication-note">* Equal contribution.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span>Liyuan Geng</span>
+    <a href="#top">Back to top</a>
+  </footer>
+</div>

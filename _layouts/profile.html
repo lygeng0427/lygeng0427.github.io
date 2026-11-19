@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  {% if page.url == '/' %}
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/liyuan-geng.webp' | absolute_url }}">
+  <meta property="og:image:alt" content="Liyuan Geng seated at a rocky overlook with an arch bridge behind him">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% endif %}
+  <link rel="icon" href="{{ '/images/liyuan-icon.png' | relative_url }}" type="image/png">
+  <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
